@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<project name="JTB" default="jar" basedir=".">
+
+  <target name="build" >
+  <mkdir dir="build"/>
+    <javac srcdir="." destdir="build"/>
+  </target>
+
+ 
+  <target name="jar" depends="build">
+  	<jar basedir="build" jarfile="JavaCC_3.2_JTB_AntTasks.jar">
+	</jar>
+  </target>  
+</project>
+
